@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&family=Montserrat:wght@100;400&family=Open+Sans:wght@300&family=Playfair+Display&family=Rubik&display=swap');
+*{
+	font-family: 'Rubik', sans-serif;
+	scroll-behavior: smooth;
+}
+body{
+	background: #1F1F1F;
+}
+/* CSS nav barre*/
+.sidenav {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: -100%;
+	background-color: #1F1F1F;
+	padding-top: 60px;
+	transition: left 0.5s ease;
+  } 
+  .sidenav ul {
+	display: block;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	list-style-type: none;
+  }
+  .sidenav a {
+	padding: 25px 25px 10px 0;
+	text-decoration: none;
+	color: #868686;
+	display: block;
+	transition: 0.3s;
+  }
+  .sidenav li{
+	display: inline-block;
+	position: relative;
+  }
+  .menuprinc a{
+	font-size: 2em;
+	color: #ACCD9D;
+  }
+  .sousmenu a{
+	font-size: 1.3em;
+	color: #918ABC;
+  }
+  .menuprinc a:hover {
+	color: #868686;
+  }
+   .sousmenu a:hover {
+	color: #868686;
+  }
+  .sidenav.active {
+	left: 0;
+  }   
+  .sidenav .close {
+	position: absolute;
+	top: 0;
+	right: 1.5625em;
+	font-size: 2.25em;
+  }  
+  .burger-icon span {
+	display: block;
+	width: 2.1875em;
+	height: 0.25em;
+	background-color: #E4E4E4;
+	margin: 0.375em 0;
+  }
+
+/*Début body */
+.titre{
+	color: #ACCD9D;
+	text-align: center;
+	margin-top: 1.5em;
+	font-size: 2em;
+	margin-bottom: 1.5em;
+}
+.imgcenter{
+	text-align: center;
+}
+.imganimalprinc{
+	height: 30em;
+	width: auto;
+	border-radius: 1.5em;
+}
+
+
+
+
+/*footer css*/
+footer{
+	margin-top: 10em;
+}
