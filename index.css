@@ -2,9 +2,15 @@
 *{
 	font-family: 'Rubik', sans-serif;
 	scroll-behavior: smooth;
+	--grisclair : #868686; 
+	--vertclair : #ACCD9D;
+	--violetclair : #918ABC;
+	--grisfoncer : #1F1F1F;
+
+
 }
 body{
-	background: #1F1F1F;
+	background: var(--grisfoncer);
 }
 /* CSS nav barre*/
 .sidenav {
@@ -13,9 +19,9 @@ body{
 	position: fixed;
 	top: 0;
 	left: -100%;
-	background-color: #1F1F1F;
+	background-color: var(--grisfoncer);
 	padding-top: 60px;
-	transition: left 0.5s ease;
+	transition: left 1s ease;
   } 
   .sidenav ul {
 	display: block;
@@ -27,7 +33,7 @@ body{
   .sidenav a {
 	padding: 25px 25px 10px 0;
 	text-decoration: none;
-	color: #868686;
+	color: var(--grisclair);
 	display: block;
 	transition: 0.3s;
   }
@@ -37,17 +43,17 @@ body{
   }
   .menuprinc a{
 	font-size: 2em;
-	color: #ACCD9D;
+	color: var(--vertclair);
   }
   .sousmenu a{
 	font-size: 1.3em;
-	color: #918ABC;
+	color: var(--violetclair);
   }
   .menuprinc a:hover {
-	color: #868686;
+	color: var(--grisclair);
   }
    .sousmenu a:hover {
-	color: #868686;
+	color: var(--grisclair);
   }
   .sidenav.active {
 	left: 0;
@@ -68,11 +74,11 @@ body{
 
 /*Début body */
 .titre{
-	color: #ACCD9D;
+	color: var(--vertclair);
 	text-align: center;
 	margin-top: 1.5em;
-	font-size: 2em;
-	margin-bottom: 1.5em;
+	font-size: 2.2em;
+	margin-bottom: 1em;
 }
 .imgcenter{
 	text-align: center;
@@ -80,6 +86,16 @@ body{
 .imganimalprinc{
 	height: 30em;
 	width: auto;
+	border-radius: 1.5em;
+}
+.p1{
+	color: var(--vertclair);
+	text-align: center;
+	font-size: 1.35em;
+	margin-bottom: 1em;
+}
+.mapzoo{
+	width: 70%;
 	border-radius: 1.5em;
 }
 
