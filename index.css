@@ -8,7 +8,9 @@
 	--grisfoncer : #1F1F1F;
 	--blancgris : #E4E4E4;
 
-
+}
+*::-webkit-scrollbar{
+	overflow: hidden;
 }
 body{
 	background: var(--grisfoncer);
@@ -142,11 +144,10 @@ body{
 }
 
 .imganimalprinc{
-	height: 29em;
-	width: auto;
-	margin-left: 31.2%;
+	width: 29em;
 	border-radius: 1.5em;
 }
+
 .imganimalprinc:hover{
 	transform: scale(1.1);
 	transition: 0.3s;
