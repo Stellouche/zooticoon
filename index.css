@@ -166,7 +166,9 @@ body{
 	transition: 0.3s;
 }
 
-
+#reptiles{
+	color: var(--vertclair);
+}
 
 /*footer css*/
 footer{
