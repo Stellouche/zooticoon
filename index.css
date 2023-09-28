@@ -23,7 +23,7 @@ body{
 	top: 0;
 	left: -100%;
 	background-color: var(--grisfoncer);
-	padding-top: 1.8em;
+	padding-top: 1.5em;
 	transition: left 1s ease;
   } 
   .sidenav ul {
@@ -45,7 +45,7 @@ body{
 	position: relative;
   }
   .menuprinc a{
-	font-size: 2em;
+	font-size: 1.9em;
 	color: var(--vertclair);
   }
   .sousmenu a{
@@ -75,13 +75,18 @@ body{
 	margin: 0.375em 0;
   }
   .accueil a{
-	font-size: 2.4em ;
-	margin-bottom: 0.8em;
+	font-size: 2.2em;
+	margin-bottom: 0.7em;
 	display: block;
 	color: var(--vertclair);
   }
   .accueil a:hover{
 	color: var(--grisclair);
+  }
+  .contact{
+	color: var(--vertclair);
+	font-size: 1.9em;
+
   }
 
 /*Début css body */
