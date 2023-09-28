@@ -83,11 +83,14 @@ body{
   .accueil a:hover{
 	color: var(--grisclair);
   }
-  .contact{
+  .contact a{	
 	color: var(--vertclair);
 	font-size: 1.9em;
-
+	display: block;
   }
+.contact:hover{
+	color: var(--grisclair);
+}
 
 /*Début css body */
 .titre{
