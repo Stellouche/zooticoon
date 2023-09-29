@@ -157,7 +157,7 @@ body{
 }
 .mapzoo:hover{
 	transform: scale(1.1);
-	transition: 0.3s;
+	transition: ease 0.3s;
 }
 .line{
 	width: 100%;
