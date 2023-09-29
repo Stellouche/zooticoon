@@ -100,6 +100,13 @@ body{
 	font-size: 2.3em;
 	margin-bottom: 1em;
 }
+.titre1{
+	color: var(--vertclair);
+	text-align: center;
+	margin-top: 1.2em;
+	font-size: 2.3em;
+	margin-bottom: 5em;
+}
 /*.test{
 	border-radius: 25%;
 	background: var(--vertclair);
