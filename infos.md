@@ -1,6 +1,6 @@
 
-# Infos concernant **Zooticoon** : 
+# Infos concernant **Zooticoon**  
 
-==================================
+-----------------------------------
 
-# Zooticoon mission 2 : 
+# Zooticoon mission 2 
