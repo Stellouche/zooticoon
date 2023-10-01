@@ -20,18 +20,22 @@ body, html {
 	margin: 0;
 	padding: 0;
 
+
   }
   
 .imgback {
+
 	background: url('foret.jpg') no-repeat center center;
 	background-size: 100% 100%; 
 	position: fixed;
+	margin: 0 0 0 0;
 	margin-top: -1em;
 	left: 0;
 	right: 0;
 	width: 100%;
-	height: 100%;
+	height: 105%;
 	z-index: -1;
+
   }
 
 
@@ -116,15 +120,7 @@ body, html {
 }
 
 /*Début css body ------------------------------------------------------------------ */
-
-.titre{
-	color: var(--vertclair);
-	text-align: center;
-	margin-top: 1em;
-	font-size: 2.4em;
-	margin-bottom: 1em;
-}
-.titre1{
+#titre1{
 	background-color: var(--blancgris);
 	height: 1.2em;
 	width: 5.5em;
@@ -139,7 +135,16 @@ body, html {
 	font-weight: 800;
 
 }
-.titre1t{
+#titre1.active{
+	display: none;
+}
+#titre1t.active{
+	display: none;
+}
+#titre1w.active{
+	display: none;
+}
+#titre1t{
 
 	color: var(--grisclair);
 	text-align: center;
@@ -151,7 +156,7 @@ body, html {
 	font-weight: 800;
 
 }
-.titre1w{
+#titre1w{
 	font-weight: 800;
 	color: var(--grisclair);
 	text-align: center;
@@ -162,6 +167,13 @@ body, html {
 	writing-mode: vertical-lr; 
 	text-orientation: upright;
 }
+
+
+
+
+
+
+
 
 .imgcenter{
 	text-align: center;
@@ -197,83 +209,6 @@ body, html {
 	margin-bottom: 1.5em;
 }
 /*---Animaux carte--*/
-.card{
-	margin-left: 35%;
-}
-.card p {
-	font-size: 17px;
-	font-weight: 400;
-	line-height: 20px;
-	color: #666;
-  }
-  
-  .card p.small {
-	font-size: 14px;
-  }
-  
-  .go-corner {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	width: 32px;
-	height: 32px;
-	overflow: hidden;
-	top: 0;
-	right: 0;
-	background-color:var(--grisclair);
-	border-radius: 0 4px 0 32px;
-  }
-  
-  .go-arrow {
-	margin-top: -4px;
-	margin-right: -4px;
-	color: var(--blancgris);
-	font-family: courier, sans;
-  }
-  
-  .card1 {
-	display: block;
-	position: relative;
-	max-width: 262px;
-	background-color: var(--blancgris);
-	border-radius: 4px;
-	padding: 32px 24px;
-	margin: 12px;
-	text-decoration: none;
-	z-index: 0;
-	overflow: hidden;
-  }
-  
-  .card1:before {
-	content: "";
-	position: absolute;
-	z-index: -1;
-	top: -16px;
-	right: -16px;
-	background: var(--grisclair);
-	height: 30em;
-	width: 30em;
-	border-radius: 32px;
-	transform: scale(1);
-	transform-origin: 50% 50%;
-	transition: transform 0.25s ease-out;
-  }
-  
-  .card1:hover:before {
-	transform: scale(23);
-  }
-  
-  .card1:hover p {
-	transition: all 0.3s ease-out;
-	color: var(--blancgris);
-  }
-  
-  .card1:hover h3 {
-	transition: all 0.3s ease-out;
-	color: var(--blancgris);
-  }
-  
 
   
 
@@ -295,118 +230,9 @@ body, html {
 	font-size: 1.3em;
 	margin-bottom: 3em;
 }
-
-#rep{
-	margin-top: 90em;
-	color: var(--vertclair);
-}
-/*---*/
-.svgbulle{
-	width: 42em;
-	margin-left: 23%;	
-	margin-top: -22.5em;
-}
-
-/*Bouton animals*/
-button {
-	position: relative;
-	display: inline-block;
-	cursor: pointer;
-	outline: none;
-	border: 0;
-	vertical-align: middle;
-	text-decoration: none;
-	background: transparent;
-	padding: 0;
-	font-size: inherit;
-	font-family: inherit;
-   }
-   
-   button.learn-more {
-	width: 15rem;
-	height: auto;
-	margin-left: 40.5%;
-	margin-top:  0em;
-	margin-bottom: 3em;
-
-   }
-   
-   button.learn-more .circle {
-	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-	position: relative;
-	display: block;
-	margin: 0;
-	width: 3rem;
-	height: 3rem;
-	background: var(--vertclair);
-	border-radius: 1.625rem;
-   }
-   
-   button.learn-more .circle .icon {
-	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	margin: auto;
-	background: var(--grisclair);
-   }
-   
-   button.learn-more .circle .icon.arrow {
-	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-	left: 0.625rem;
-	width: 1.125rem;
-	height: 0.125rem;
-	background: none;
-   }
-   
-   button.learn-more .circle .icon.arrow::before {
-	position: absolute;
-	content: "";
-	top: -0.29rem;
-	right: 0.0625rem;
-	width: 0.625rem;
-	height: 0.625rem;
-	border-top: 0.125rem solid var(--blancgris);
-	border-right: 0.125rem solid var(--blancgris);
-	transform: rotate(45deg);
-   }
-   
-   button.learn-more .button-text {
-	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	padding: 0.75rem 0;
-	margin: 0 0 0 1.85rem;
-	color: var(--vertclair);
-	font-weight: 700;
-	line-height: 1.6;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
-   }
-   
-   button:hover .circle {
-	width: 100%;
-   }
-   
-   button:hover .circle .icon.arrow {
-	background: var(--blancgris);
-	transform: translate(1rem, 0);
-   }
-   
-   button:hover .button-text {
-	color: var(--blancgris);
-	text-decoration: none;
-   }
 .divcenter{
 	align-items: center;
 }
-/**/
-
-
 
 /*footer css*/
 footer{
@@ -416,7 +242,5 @@ footer{
 
 /*-----*/
 @media screen and (max-width : 550px){
-	.imganimalprinc{
-		width: 20em;
-	}
+
 }
