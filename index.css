@@ -91,6 +91,7 @@ body, html {
 	border-radius: 1em;
 	background-color: var(--grisclair);
 	margin: 0.3em 1em;
+
   }
   .accueil a{
 	font-size: 2.2em;
@@ -111,38 +112,46 @@ body, html {
 }
 
 /*------------------------------------------------------------------ */
+.titre{
+	color: var(--blancgris);
+	text-align: center;
+	margin-top: 2em;
+	font-size: 2em;
+	margin-bottom: 1em;
+}
 #titre1{
 	background-color: var(--blancgris);
 	height: 1.2em;
 	width: 5.5em;
 	border-radius: 0.1em;
-	color: var(--grisclair);
+	color: #5D6D7E;
 	text-align: center;
 	margin-top: -2.3em;
 	font-size: 3.5em;
-	margin-left: 9em;
+	margin-left: 6.5em;
 	margin-bottom: 2.5em;
-	opacity: 0.85;
+	opacity: 0.8;
 	font-weight: 800;
 }
 #titre1t{
-
-	color: var(--grisclair);
+	color: #5D6D7E;
 	text-align: center;
 	margin-top: -5em;
 	font-size: 3.5em;
-	margin-left: -4em;
+	margin-left: 6em;
+	height: 1.2;
+	width: 2em;
 	margin-bottom: 2.5em;
 	opacity: 0.8;
 	font-weight: 800;
 }
 #titre1w{
-	font-weight: 800;
-	color: var(--grisclair);
+	font-weight: 900;
+	color: #5D6D7E;
 	text-align: center;
 	margin-top: 1.5em;
-	margin-left: 8.3em;
-	font-size: 3em;
+	margin-left: 4.5em;
+	font-size: 3.2em;
 	opacity: 0.8;
 	writing-mode: vertical-lr; 
 	text-orientation: upright;
@@ -158,6 +167,10 @@ body, html {
 }
 
 /*------------------------------------------------*/
+
+
+
+
 
 .p1{
 	color: var(--violetclair);
