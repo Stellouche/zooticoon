@@ -5,6 +5,8 @@ var titre1 = document.getElementById("titre1");
 var titre1t = document.getElementById("titre1t");
 var titre1w = document.getElementById("titre1w");
 var card = document.getElementById("card");
+var card2 = document.getElementById("card2");
+var card3 = document.getElementById("card3");
 
 
 let pageActuelle;
@@ -80,9 +82,13 @@ function demasqueIndex(){
 /* Masque les element de ANIMAUX*/
 function masqueAnimaux(){
   card.classList.add("active");
+  card2.classList.add("active");
+  card3.classList.add("active");
 }
 function demasqueAnimaux(){
   card.classList.remove("active");
+  card2.classList.remove("active");
+  card3.classList.remove("active");
 }
 
 /* Masque les element de RESTAURANT*/

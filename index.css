@@ -20,16 +20,17 @@ body, html {
 	padding: 0;
   }  
 .imgback {
-	background: url('foret.jpg') no-repeat center center;
-	background-size: 100% 100%; 
+	background: url('foret2.jpg') no-repeat center center;
+	background-size: cover; 
 	position: fixed;
-	margin: 0 0 0 0;
-	margin-top: -1em;
-	left: 0;
-	right: 0;
-	width: 100%;
-	height: 105%;
+	margin-top: 1em;
+	margin-bottom: auto;
+	right: 2em;
+	width: 42em;
+	height: 36em;
 	z-index: -1;
+	border-radius: 0.2em;
+	
   }
 
 /* CSS nav barre*/
@@ -119,19 +120,34 @@ body, html {
 	font-size: 2em;
 	margin-bottom: 1em;
 }
+.titreind{
+	margin-left: 2em;
+	color: var(--blancgris);
+	margin-top: 3.5em;
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+.ind1{
+	margin-left: 4em;
+	color: var(--blancgris);
+	margin-top: 3em;
+	font-size: 1em;
+}
+.ind2{
+	margin-left: 4em;
+	color: var(--blancgris);
+	margin-top: -0.9em;
+	font-size: 1em;
+	margin-bottom: 1em;
+}
 #titre1{
-	background-color: var(--blancgris);
 	height: 1.2em;
 	width: 5.5em;
-	border-radius: 0.1em;
-	color: #5D6D7E;
+	color: var(--blancgris);
 	text-align: center;
-	margin-top: -2.3em;
-	font-size: 3.5em;
+	margin-top: 2em;
+	font-size: 2em;
 	margin-left: 6.5em;
-	margin-bottom: 2.5em;
-	opacity: 0.8;
-	font-weight: 800;
 }
 #titre1t{
 	color: #5D6D7E;
@@ -167,6 +183,44 @@ body, html {
 }
 
 /*---------------------------ANIMAUX--------------------------------*/
+.mensec{
+	margin-top: 3em;
+	align-items: center;
+	overflow: hidden;
+}
+.mensec ul{
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+.mensec li{
+	display: inline-block;
+	text-align: center;
+}
+.mensec a{
+	text-decoration: none;
+	color: var(--vertclair);
+	margin-left: 1.3em;
+	text-align: center;
+}
+.mensec a:hover{
+	color: var(--grisclair);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #card.active{
 	display: none;
 
@@ -181,7 +235,7 @@ body, html {
 	width: 24em;
 	height: 17em;
 	display: flex;
-	background: url('poulpe.png') no-repeat center ;
+	background: url('bleulezard.jpg') no-repeat center ;
 	background-size: cover;
 	border-radius: 0.3em;
 	align-items: center;
@@ -217,7 +271,7 @@ body, html {
   .card__title {
 	margin: 0;
 	font-size: 24px;
-	color: #333;
+	color: var(--vertclair);
 	font-weight: 700;
   }
   
@@ -229,9 +283,9 @@ body, html {
   }
 
   .pT{
-	color: var(--violetclair);
+	color: var(--blancgris);
 	text-align: center;
-	font-size: 1.2em;
+	font-size: 2em;
 	margin-top: 2em;
   }
 
@@ -287,7 +341,7 @@ body, html {
   .card__title2 {
 	margin: 0;
 	font-size: 24px;
-	color: #333;
+	color: var(--vertclair);
 	font-weight: 700;
   }
   
@@ -297,8 +351,67 @@ body, html {
 	color: #777;
 	line-height: 1.4;
   }
+  #card2.active{
+	display: none;
 
+}
+#card3.active{
+	display: none;
 
+}
+  #card3 {
+	margin-top: 4em;
+	margin-left: 10em;
+	position: relative;
+	width: 24em;
+	height: 17em;
+	display: flex;
+	background: url('serpentglacer.avif') no-repeat center ;
+	background-size: cover;
+	border-radius: 0.3em;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  #card3:hover {
+	transform: rotate(-5deg) scale(1.1);
+	box-shadow: 0 10px 20px var(--blancgris);
+  }
+  
+  .card__content3 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(-45deg);
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: #fff;
+	opacity: 0;
+	transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  #card3:hover .card__content3 {
+	transform: translate(-50%, -50%) rotate(0deg);
+	opacity: 1;
+  }
+  
+  .card__title3 {
+	margin: 0;
+	font-size: 24px;
+	color: var(--vertclair);
+	font-weight: 700;
+  }
+  
+  .card__description3 {
+	margin: 10px 0 0;
+	font-size: 14px;
+	color: #777;
+	line-height: 1.4;
+  }
 
 /*----------------*/
 
