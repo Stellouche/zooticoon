@@ -11,15 +11,15 @@ var card3 = document.getElementById("card3");
 
 let pageActuelle;
  
-if (window.location.pathname === '/index.html'){
+if (window.location.pathname.endsWith('/zooticoon-mission2/')|| window.location.pathname.endsWith('/zooticoon-mission2/index.html') || window.location.pathname.endsWith('index.html')){
   pageActuelle = 'index';
-} else if (window.location.pathname === '/restaurant.html'){
+} else if (window.location.pathname.endsWith('/zooticoon-mission2/restaurant.html') || window.location.pathname.endsWith('restaurant.html')){
   pageActuelle = 'restaurant';
-}else if (window.location.pathname === '/animal.html'){
+}else if (window.location.pathname.endsWith('/animal.html') || window.location.pathname.endsWith('/zooticoon-mission2/animail.html')){
   pageActuelle = 'animaux';
-}else if (window.location.pathname === '/contact.html'){
+}else if (window.location.pathname.endsWith('zooticoon-mission2/contact.html') || window.location.pathname.endsWith('/contact.html')){
   pageActuelle = 'contact';
-}else if (window.location.pathname === '/boutique.html'){
+}else if (window.location.pathname.endsWith('/zooticoon-mission2/boutique.html') || window.location.pathname.endsWith('/boutique.html')){
   pageActuelle = 'boutique';
 }
 
