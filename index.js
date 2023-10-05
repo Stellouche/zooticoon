@@ -7,6 +7,12 @@ var titre1w = document.getElementById("titre1w");
 var card = document.getElementById("card");
 var card2 = document.getElementById("card2");
 var card3 = document.getElementById("card3");
+var card4 = document.getElementById("card4");
+var card5 = document.getElementById("card5");
+var card6 = document.getElementById("card6");
+var card7 = document.getElementById("card4");
+var card8 = document.getElementById("card5");
+var card9 = document.getElementById("card6");
 
 
 let pageActuelle;
@@ -22,9 +28,7 @@ if (window.location.pathname.endsWith('/zooticoon-mission2/')|| window.location.
 }else if (window.location.pathname.endsWith('/zooticoon-mission2/boutique.html') || window.location.pathname.endsWith('/boutique.html')){
   pageActuelle = 'boutique';
 }
-
-
-
+/*masque*/
 openBtn.addEventListener('click', () => {
   if (pageActuelle === 'index'){
     openNav();
@@ -42,7 +46,7 @@ openBtn.addEventListener('click', () => {
   }
 
 })
-
+/*demasque*/
 closeBtn.addEventListener('click', () => {
   if (pageActuelle === 'index'){
     closeNav();
@@ -64,7 +68,6 @@ closeBtn.addEventListener('click', () => {
   }else if (pageActuelle === 'boutique'){
     closeNav();
   }
-
 })
 
 /* Masque les element de INDEX*/
@@ -84,11 +87,23 @@ function masqueAnimaux(){
   card.classList.add("active");
   card2.classList.add("active");
   card3.classList.add("active");
+  card4.classList.add("active");
+  card5.classList.add("active");
+  card6.classList.add("active");
+  card7.classList.add("active");
+  card8.classList.add("active");
+  card9.classList.add("active");
 }
 function demasqueAnimaux(){
   card.classList.remove("active");
   card2.classList.remove("active");
   card3.classList.remove("active");
+  card4.classList.remove("active");
+  card5.classList.remove("active");
+  card6.classList.remove("active");
+  card7.classList.remove("active");
+  card8.classList.remove("active");
+  card9.classList.remove("active");
 }
 
 /* Masque les element de RESTAURANT*/
