@@ -10,9 +10,9 @@ var card3 = document.getElementById("card3");
 var card4 = document.getElementById("card4");
 var card5 = document.getElementById("card5");
 var card6 = document.getElementById("card6");
-var card7 = document.getElementById("card4");
-var card8 = document.getElementById("card5");
-var card9 = document.getElementById("card6");
+var card7 = document.getElementById("card7");
+var card8 = document.getElementById("card8");
+var card9 = document.getElementById("card9");
 
 
 let pageActuelle;
