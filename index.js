@@ -13,6 +13,7 @@ var card6 = document.getElementById("card6");
 var card7 = document.getElementById("card7");
 var card8 = document.getElementById("card8");
 var card9 = document.getElementById("card9");
+var cardp = document.getElementById("cardp");
 
 
 let pageActuelle;
@@ -43,6 +44,7 @@ openBtn.addEventListener('click', () => {
     openNav();
   }else if (pageActuelle === 'boutique'){
     openNav();
+    masqueBoutique();
   }
 
 })
@@ -67,6 +69,7 @@ closeBtn.addEventListener('click', () => {
     closeNav();
   }else if (pageActuelle === 'boutique'){
     closeNav();
+    demasqueBoutique();
   }
 })
 
@@ -112,6 +115,13 @@ function masqueRestau(){
 }
 function demasqueRestau(){
   card.classList.remove("active");
+}
+/* Masque les element de BOUTIQUE*/
+function masqueBoutique(){
+  cardp.classList.add("active");
+}
+function demasqueBoutique(){
+  cardp.classList.remove("active");
 }
 
 /* Ouvre et ferme la NAV */

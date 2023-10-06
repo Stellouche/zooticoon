@@ -30,7 +30,26 @@
 	  
 	<!------------------- Fin nav ------------------------->
 
-	  <P>rien pour l'instant</P>
+	<div class="container">
+		<h1>Contact</h1>
+		<form action="/action_page.php">
+		  <label for="fname">Name</label>
+		  <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
+	  
+		  <label for="sujet">Subject</label>
+		  <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
+	  
+		  <label for="emailAddress">Email</label>
+		  <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+	  
+	  
+		  <label for="subject">Content</label>
+		  <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+	  
+		  <input type="submit" value="Envoyer">
+		</form>
+	  </div>
+	  
 
 	<footer class="foot"></footer>
 	<script src="index.js"></script>
