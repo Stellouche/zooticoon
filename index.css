@@ -857,10 +857,72 @@ body, html {
 	width: 40%;
 	margin-bottom: 4em;
 }
+/*---------------------------BOUTIQUE-------------------------------*/
+.cardp {
+	margin-left: 36%;
+	width: 20em;
+	height: 27em;
+	padding: .8em;
+	background: var(--blancgris);
+	position: relative;
+	overflow: visible;
+	border-radius: 0.5em;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+   }
+   
+   .card-img {
+	height: 55%;
+	width: 100%;
+	border-radius: 1em;
+	background-size: cover ;
+   }
+   
+   .card-info {
+	padding-top: 10%;
+	color: var(--grisfoncer);
+   }
+   
+   .card-footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 10px;
+	border-top: 1px solid var(--grisclair);
+   }
+   
+   /*Text*/
+   .text-title {
+	font-weight: 900;
+	font-size: 1.2em;
+	line-height: 1.5;
+	margin-top: 0.5em;
+   }
+.price{
+	font-weight: 900;
+	font-size: 1.2em;
+	line-height: 1.5;
+	margin-top: 0.3em;
 
-
-
-
+}
+   
+   .text-body {
+	font-size: .9em;
+	padding-bottom: 10px;
+   }
+.pboutique{
+	font-size: 1.5em;
+	color: var(--blancgris);
+	text-align: center;
+	margin-bottom: 2em;
+}
+.ppeluche{
+	font-size: 1.5em;
+	color: var(--blancgris);
+	text-align: center;
+	margin-top: 4em;
+	margin-bottom: 2em;
+}
 
 /*--------------------------FOOTER---------------------------------*/
 footer{
